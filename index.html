@@ -1,450 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Hritik Kumar Singh Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-  <title>iPortfolio Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <link rel="stylesheet" href="css/aos.css">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+<style>
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+/*======================================
+//--//-->   ABOUT
+======================================*/
 
-<body>
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+.about-mf .about-img img {
+  margin-left: 10px;
+}
 
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Hritik Singh</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/hritik8878" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/hritik.kumar.1048554" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/hritik.singh.0" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/hritik-singh8878/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Hritik Singh</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Hritik Kumar Singh</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Payroll Specialist   ',
+						'Recruitment Expert ',
+						'Resume Writer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Human Resource Executive</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+						<div class="col-lg-4" data-aos="fade-right">
+							<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+							<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="hritik-singh8878" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/hritik-singh8878?trk=profile-badge"></a></div>
+									  </div>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Hritik Singh</span></p>
+										<p><span class="title-s">Job Role: </span> <span>HR Executive</span></p>
+										<p><span class="title-s">Experience: </span> <span>Payroll, Recruitment, Resume Writing</span></p>
+										<p><span class="title-s">Address: </span> <span>Bhopal(M.P), India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Payroll</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Recruitment</span> <span class="pull-right">98%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Resume Writing</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With comprehensive experience in the field of Human Resource, accompanied by a bachelor's degree in Computer Science Honours. 
+									Proficient in Recruitment, Payroll &amp;Resume Writing.Demonstrated success in leading impactful projects and providing effective mentorship.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span> Human Resource Executive </span></li>
+									<li class="d-flex"><span>Domain:</span> <span> Human Resource</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Computer Science Honours</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>							
+									<li class="d-flex"><span>Other Skills:</span> <span>Winhms, Excel, Git, Naukri, Shine, FoundIT &amp; LinkedIn</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching, Basketball, Fitness</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/hritik-singh8878/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>I'm a motivated and self-reliant HR professional. Experience in Payroll, IT recruitment, talent acquisition, sourcing, screening, and effective use of job portals. I'm also Skilled in interviewing, candidate coordination, employee relations, negotiation, and HR consulting. Proficient in Microsoft Office and team collaboration. Eager to embrace new technologies and grow in the HR field. Seeking opportunities to contribute my passion and expertise to Human Resources.</p>
+          </div>
         </div>
-      </div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">December 2023-Present</span>
+						<h2>HR Executive</h2>
+						<span class="position">Hotel Amer Palace </span>
+						<p class="mt-4">Hotel Amer Palace With 55  appointed rooms and suites, three banquet halls, and signature restaurant, Jarokha. And four outlets, Amer Bakery Hut, offers baked goods and a Family restaurant. 
+							<ul>
+								<li>Monthly tasks: Distribute salary on time, make salaries using WINHMS, enter advances, prepare reports, and visit staff quarters. </li>
+<li>Manage Hotel Amer Palace & ABH(Amer Bakery Hut) attendance, and overtime, and update leave records. </li>
+<li>Address daily staff grievances and handle queries on OT(Overtime), and salary using WINHMS. </li>
+<li>Submit Daily and monthly Sales vs. Salary analysis to higher authorities for review and assessment. </li>
+<li>Organize HR/Personnel desk, maintaining files and filing memos. </li>
+<li>Taking care of Onboarding and Exit Formalities of the Employees. </li>
+<li>Support recruitment with searches, manage candidate entries, and file CVs. </li>
+<li>Assist in bank account openings and accompany in emergencies (Accountable). </li>
+<li>Organizing the Birthday Party and farewells. </li>
+<li>Inform the Director about staffing changes and conduct new employee introductions. </li>
+<li>Maintain lists of left employees, New joinees, leaves, and Service Duration of the employee. </li>
+<li>Quarterly/yearly responsibilities: Assist in appraisals and prepare gift lists. </li>
+<li>Well versed with Job portals (Naukri.com, Linkdin.com, Monster Or Foundit, Shine) </li>
+<li>Good Knowledge of PF and ESIC. </li>
+<li>Good Knowledge of Salary Breakup. </li>
+<li>Daily use OF MS Excel and MS Word. </li>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Hritik Singh</h1>
-              
-      <p>I'm <span class="typed" data-typed-items="HR Executive(Recruiter), Resume Writer, Freelancer"></span></p>
-    </div>
-  </section><!-- End Hero -->
+							</ul>
+						</p>
+					</div>
 
-  <main id="main">
+				</div>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">July 2022 - December 2023</span>
+						<h2>HR Recruiter</h2>
+						<span class="position">Corporate Steps</span>
+						<p class="mt-4">Corporate Steps is a recruitment consultancy specializing in two major verticals: IT and Non-IT sectors. 
+							<ul>
+								<li>Responsible for managing end-to-end recruitment. (From JD Till Joining of the Candidate.) </li>
+<li>Managing job postings on career pages, External websites, and social channels. </li>
+<li>Screening and Short-listing candidates as per specific JD (Job descriptions). </li>
+<li>Schedule interviews, and coordinate with the shortlisted candidates for the next levels of interviews till the closure. </li>
+<li>Updating candidates regarding interview schedules, feedback, documentation, date of joining, and ultimately on-boarding the selected candidate </li>
+<li>Follow up with the selected candidates till they join to the particular requirement of the clients. </li>
+<li>Ability to manage multiple profiles (well Versed with IT & Non-IT Profiles.) </li>
+<li>Uploading candidate's profile to clients' portal. </li>
+<li>Helping Perfect Fit Candidates to Update their Resume as per requirements. </li>
+<li>Training new joinees and imparting essential skills for success within an organization, following a recruitment process that involves sourcing, interviews, skills assessment, and onboarding. Effective training integrates job-specific skills and company culture, fostering engagement and long-term growth & Effective training integrating. </li>
+
+
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2023</span>
+    					<h2>Bachelor of Science Computer Science Honours</h2>
+    					<span class="position">Delhi University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2019</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Bonnie Foi Co-ed School</span>
+    					<p class="mt-4">Grade: Second class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/108Oh1pzdB2n62rYrptOc2TT-QnDNjx-Y/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
       <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p> Hi! I am a motivated, optimistic and self-dependent person.
-I have an experience as an HR Recruiter. My key skills in Human Resources are IT Recruitment, Talent Acquisition, Sourcing, Screening, Using Job Portals effectively to find a perfect fit, Interviewing, and Client Coordination. I am adaptable to handle End to End Recruitment, Employee Relations Negotiation, and HR Consulting. I am well versed in Microsoft Office, and Working in Teams. I am enthusiastic about working with New technologies and gaining knowledge of HR functions. I am looking forward to building my career in the HR field and grabbing an opportunity in the HR field to utilize my zeal & passion and improve myself.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="hritik-singh8878" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/hritik-singh8878?trk=profile-badge"></a></div>
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Testimonials</h1>
+            <h2 class="mb-4">Testimonials</h2>
+            <p>Clients have consistently praised my work as an HR recruiter and resume writer, as reflected in their testimonials. One client commended my expertise in sourcing, screening, and selecting top-tier candidates, emphasizing the high caliber of individuals I brought to their organization. Another client highlighted my proficiency in conducting interviews, evaluating qualifications, and assessing cultural fit, noting the valuable insights I provided during the hiring process. Additionally, clients have expressed their satisfaction with my ability to tailor resumes to specific industries or job positions, with one client stating that their resume stood out and led to multiple job offers. They have also praised my excellent communication and interpersonal skills, appreciating the positive relationships I fostered and my professionalism in representing their interests. These testimonials attest to my dedication and effectiveness as an HR recruiter and resume writer, ensuring client satisfaction and successful outcomes.</p>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>HR Executive (Recruiter) &amp; Resume Writer</h3>
-            <p class="fst-italic">
-              
-Motivated Human Resource Professional with a drive for serving as a supportive and energetic team member and always passionate
-about delivering outstanding quality and service.
- <br>
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul><br>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8878929396</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bhopal (M.P)</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul><br>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BSC (Honours) Computer Science </span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>khritik898@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.linkedin.com/in/azhar-ahmed-44256434/" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.linkedin.com/in/azhar-ahmed-44256434/">Azhar Ahmed</a></h3>
+                <p>Resume prepared by him is absolutely professional, too good..i higly recommend his services.</p>
               </div>
             </div>
-            <p>
-               I am a versatile professional with a passion for connecting talent with opportunities. My combined expertise as an HR Executive (Recruiter) and Resume Writer enables me to bring a holistic approach to the recruitment process, ensuring a seamless experience for both candidates and organizations.
-            </p>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.linkedin.com/in/bhumika-dixit-153081203/" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.linkedin.com/in/bhumika-dixit-153081203/">Bhumika Dxit</a></h3>
+                <p>Thankyou hritik it was a great experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://www.linkedin.com/in/ankit-ekka-ba3a171a2/" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.linkedin.com/in/ankit-ekka-ba3a171a2/">Ankit Ekka</a></h3>
+                <p>  I approached Hritik for creating my resume. The resume he made was very professional and suitable as per my profession. Professional and good behaviour.</p>
+              </div>
+            </div>
           </div>
         </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.linkedin.com/in/heena-sobhani-8560a224a/" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.linkedin.com/in/heena-sobhani-8560a224a/">Heena Sobhani</a></h3>
+				  <p>I highly recommend his service due to the great work he provided. From start to finish, he demonstrated professionalism, expertise, and a strong commitment to delivering exceptional results. First and foremost, his communication skills were exemplary. He actively listened to my needs and requirements, ensuring that he understood exactly what I was looking for. He was responsive, clear, and concise in his interactions, which made the entire process smooth and efficient.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
 
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>With a demonstrated expertise in sourcing, screening, and selecting top-tier candidates for job openings, I am proficient in conducting interviews, evaluating qualifications, and assessing cultural fit. My experience includes posting job advertisements and utilizing various sourcing methods and recruitment tools to attract the best talent. I possess in-depth knowledge of employment laws and regulations, ensuring compliance throughout the recruitment process. Furthermore, my excellent communication and interpersonal skills allow for effective candidate engagement and relationship building. On the other hand, as a resume writer, I have a proven track record in crafting professional resumes that effectively highlight candidates' skills and qualifications. My strong writing and editing skills, coupled with a keen eye for detail, enable me to create impactful resumes. I have expertise in tailoring resumes to specific industries or job positions, staying updated on resume formats, keyword optimization, and industry trends. With excellent client communication and collaboration skills, I effectively gather relevant information to ensure client satisfaction and deliver compelling resumes.</p>
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="109" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong></p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="128" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong></p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong></p>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Facts Section -->
+	
+	</section>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>With a comprehensive skill set, I excel both as an HR recruiter and a resume writer. In my role as an HR recruiter, I possess the essential skills for effectively sourcing, screening, and selecting top-tier candidates. Proficient in conducting interviews, evaluating qualifications, and assessing cultural fit, I make informed hiring decisions that align with organizational goals. Utilizing various sourcing methods and recruitment tools, I attract diverse talent pools and post compelling job advertisements. Moreover, my in-depth knowledge of employment laws and regulations ensures compliance throughout the recruitment process. With excellent communication and interpersonal skills, I engage candidates with professionalism, building positive relationships and representing the organization with distinction.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-           
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Motivated Human Resource Professional with a drive for serving as a supportive and energetic team member and always passionate about delivering outstanding quality and service.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Hritik Singh</h4>
-              <p><em>Motivated Human Resource Professional with a drive for serving as
-a supportive and energetic team member and always passionate
-about delivering outstanding quality and service.</em></p>
-              <ul>
-                <li>Bhopal (M.P)</li>
-                <li>(+91) 8878929396 </li>
-                <li>khritik898@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bsc(Honours) Computer Science</h4>
-              <h5>2023</h5>
-              <p><em>S.G.T.B KHALSA COLLEGE,
-DELHI UNIVERSITY
-</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>12th (Physics, Chemistry &amp Maths)</h4>
-              <h5>2019</h5>
-              <p><em>(C.B.S.E)</em></p>
-             
-            </div> 
-<div class="resume-item">
-              <h4>10th</h4>
-              <h5>2017</h5>
-              <p><em>(C.B.S.E)</em></p>
-             
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>HR Recruiter Executive</h4>
-              <h5>July 2022 - Present</h5>
-              <p><em>Corporate Steps, Bhopal(M.P) </em></p>
-              <ul>
-<li>Responsible for managing end to end recruitment. (From Job Description to Joining of the Candidate.) </li>
-<li>Candidates to interviewing and placing the candidates at the end. </li>
-<li>Working on sourcing techniques including job portal, networking, referrals, headhunting, and cold calling. Cold calls to suitable candidates. </li>
-<li>Screening and Short-listing candidates as per specific job descriptions. </li>
-<li>Managing job postings on career pages, external websites, and social channels.</li>
-<li>Ability to manage multiple profiles. (well Versed with IT & Non - IT Profiles.) </li>
-<li>Uploading candidates profile to clients portal. </li>
-<li>Follow up the selected candidates till they join to the particular requirement of the clients.﻿</li>
-<li>Updating candidates regarding interview schedules, feedback, documentation, date of joining and ultimately on-boarding the selected candidate. </li>
-<li>Schedule interviews, co-ordinate with the shortlisted candidates for next levels of interviews till the closure.</li>
-              </ul>
-            </div>
-              </ul>
-            </div>
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
           </div>
         </div>
 
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>I am available to offer my services and also open to freelancing opportunities. With my skills and expertise, I am ready to provide professional assistance in various areas. Whether you need assistance with project management, content creation, web development, or any other relevant services, I am well-equipped to deliver high-quality results. Additionally, as a freelancer, I am open to collaborating on independent projects or joining your team on a contract basis. I bring a strong work ethic, excellent communication skills, and a dedication to delivering exceptional work. Feel free to reach out to discuss your specific needs and explore how I can contribute to your projects or freelancing opportunities.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href=""> Recruitment</a></h4>
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Bhopal(M.P), India</p>
+	          </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Resume Writter</a></h4>
-       
-    </section><!-- End Services Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Clients have consistently praised my work as an HR recruiter and resume writer, as reflected in their testimonials. One client commended my expertise in sourcing, screening, and selecting top-tier candidates, emphasizing the high caliber of individuals I brought to their organization. Another client highlighted my proficiency in conducting interviews, evaluating qualifications, and assessing cultural fit, noting the valuable insights I provided during the hiring process. Additionally, clients have expressed their satisfaction with my ability to tailor resumes to specific industries or job positions, with one client stating that their resume stood out and led to multiple job offers. They have also praised my excellent communication and interpersonal skills, appreciating the positive relationships I fostered and my professionalism in representing their interests. These testimonials attest to my dedication and effectiveness as an HR recruiter and resume writer, ensuring client satisfaction and successful outcomes.</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Resume prepared by him is absolutely professional, too good..i higly recommend his services..
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Azhar Ahmed</h3>
-                <h4>Content Manager</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I highly recommend his service due to the great work he provided. From start to finish, he demonstrated professionalism, expertise, and a strong commitment to delivering exceptional results. First and foremost, his communication skills were exemplary. He actively listened to my needs and requirements, ensuring that he understood exactly what I was looking for. He was responsive, clear, and concise in his interactions, which made the entire process smooth and efficient.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Heena Sobhani</h3>
-                <h4>HR Executive</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                 The resume is good. The nature and behaviour of hritik is nice.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Prakash Singh</h3>
-                <h4>Fresher</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Thankyou hritik it was a great experience.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Bhumika Dxit</h3>
-                <h4>HR Executive</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I approached Hritik for creating my resume. The resume he made was very professional and suitable as per my profession. Professional and good behaviour.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>Ankit Ekka</h3>
-                <h4>HR Recruiter</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="https://wa.me/8878929396">+91 8878929396</a></p>
+	          </div>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p> As a dedicated professional with a passion for HR Executive & Resume Writter, I am excited to connect and explore new opportunities. Please feel free to reach out to me via phone or email, and let's connect on LinkedIn to expand our professional networks. I look forward to discussing how my skills and experience can contribute to your organization's success.</p>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-50 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Bhopal (M.P)</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>Khrtik898@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 8878 929396</p>
-<a href="https://www.linkedin.com/services/page/940129322720a13440/">Send Message on LinkedIn</a>
-              </div>
-
-            </div>
-
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:hritiksinghhr@gmail.com">hritiksinghhr@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/108Oh1pzdB2n62rYrptOc2TT-QnDNjx-Y/view?usp=drive_link">Download</a></p>
+	          </div>
           </div>
 
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
 
-        </div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/hritik-singh8878/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com/hritik8878"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/hritik.kumar.1048554"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/hritik.singh.0/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
 
-      </div>
-    </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
 </html>
